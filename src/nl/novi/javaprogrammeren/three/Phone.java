@@ -12,8 +12,9 @@ public class Phone {
     }
 
     public String getInternationalPhoneNumber() {
-        String phoneNumber = "+31";
+        //Hieroner was sprake van variable shadowing.
+        String internationalPhoneNumber = "+31" + this.phoneNumber;
 
-        return phoneNumber;
+        return internationalPhoneNumber;
     }
 }
